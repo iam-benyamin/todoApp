@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  font-family: 'Comfortaa', cursive, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background: #d2f4ff;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#todo {
+  background: white;
+  height: 100%;
+}
+
+#todo .banner {
+  background-color: #f1fcff;
+  height: 170px;
+  width: 500px;
+  overflow: hidden;
+  color: white;
+  position: relative;
+}
+
+#todo .banner img {
+  margin-top: -40px;
+}
+
+#todo .banner .date {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+/*# sourceMappingURL=index.css.map */

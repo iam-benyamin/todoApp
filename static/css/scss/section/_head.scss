@@ -1,0 +1,22 @@
+#todo {
+    background: white;
+    height: 100%;
+    .banner {
+        background-color: #f1fcff;
+        height: 170px;
+        width: 500px;
+        overflow: hidden;
+        color: white;
+        position: relative;
+        img {
+            margin-top: -40px;
+        }
+        .date {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            font-weight: 700;
+            font-size: 18px
+        }
+    }
+}
