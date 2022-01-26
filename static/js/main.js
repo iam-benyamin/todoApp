@@ -2,10 +2,16 @@ let input = document.getElementById("task");
 let ul = document.getElementById("list");
 
 function addTask() {
-    let li = document.createElement('li');
-    li.appendChild(document.createTextNode(input.value));
-    input.value = "";
-    ul.appendChild(li);
+    let inputValue = input.value.trim();
+    if(inputValue.lenght > 0) {
+        let li = document.createElement('li');
+        li.appendChild(document.createTextNode(input.value));
+        input.value = "";
+        ul.appendChild(li);
+    } else {
+        input.value = '';
+        alert('you have to write something');
+    }
 }
 
 function addTaskWithEnter(event) {
