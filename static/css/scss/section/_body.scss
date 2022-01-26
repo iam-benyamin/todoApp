@@ -9,7 +9,7 @@
                 margin: 15px 5px 10px 30px;
                 position: relative;
                 &:before {
-                    content: "\f1db";
+                    // content: "\f1db";
                     font-family: FontAwesome;
                     color: #575757;
                     font-size: 18px;
@@ -33,7 +33,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 500px;
-        form {
+        .form {
             display: flex;
             justify-content: space-between;
             align-items: center;

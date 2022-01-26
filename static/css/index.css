@@ -69,7 +69,6 @@ body {
 }
 
 #main .content ul li:before {
-  content: "\f1db";
   font-family: FontAwesome;
   color: #575757;
   font-size: 18px;
@@ -96,7 +95,7 @@ body {
   width: 500px;
 }
 
-#main .add form {
+#main .add .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +108,7 @@ body {
   margin: 10px;
 }
 
-#main .add form #task {
+#main .add .form #task {
   border: none;
   position: relative;
   outline: none;
@@ -119,7 +118,7 @@ body {
   background: rgba(255, 255, 255, 0);
 }
 
-#main .add form #btn {
+#main .add .form #btn {
   background: rgba(255, 255, 255, 0);
   border: none;
   color: #575757;
