@@ -21,7 +21,7 @@ li {
 }
 
 body {
-  background: #d2f4ff;
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
 }
 
 .container {
@@ -29,13 +29,11 @@ body {
   margin: 0 auto;
 }
 
-#todo {
+#header {
   background: white;
-  height: 100%;
 }
 
-#todo .banner {
-  background-color: #f1fcff;
+#header .banner {
   height: 170px;
   width: 500px;
   overflow: hidden;
@@ -43,15 +41,67 @@ body {
   position: relative;
 }
 
-#todo .banner img {
+#header .banner img {
   margin-top: -40px;
 }
 
-#todo .banner .date {
+#header .banner .date {
   position: absolute;
   bottom: 15px;
   left: 15px;
   font-weight: 700;
   font-size: 18px;
+}
+
+#main {
+  background: #ffffff;
+  height: 100vh;
+}
+
+#main .content {
+  padding: 20px 15px;
+}
+
+#main .add {
+  z-index: 1;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 5px 0px #575757;
+          box-shadow: 0px 0px 5px 0px #575757;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+
+#main .add form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+#main .add form #task {
+  border: none;
+  position: relative;
+  outline: none;
+  font-size: 18px;
+  padding: 12px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0);
+}
+
+#main .add form #btn {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  color: #575757;
+  font-size: 35px;
 }
 /*# sourceMappingURL=index.css.map */
