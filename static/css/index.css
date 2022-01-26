@@ -55,11 +55,32 @@ body {
 
 #main {
   background: #ffffff;
-  height: 100vh;
+  height: 100%;
 }
 
 #main .content {
-  padding: 20px 15px;
+  background: #ffffff;
+  padding: 20px 15px 100px 15px;
+}
+
+#main .content ul li {
+  margin: 15px 5px 10px 30px;
+  position: relative;
+}
+
+#main .content ul li:before {
+  content: "\f1db";
+  font-family: FontAwesome;
+  color: #575757;
+  font-size: 18px;
+  padding-right: 8px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+#main .content ul li:hover {
+  cursor: pointer;
 }
 
 #main .add {
@@ -72,7 +93,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 100%;
+  width: 500px;
 }
 
 #main .add form {
@@ -103,5 +124,6 @@ body {
   border: none;
   color: #575757;
   font-size: 35px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

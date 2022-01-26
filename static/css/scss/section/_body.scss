@@ -1,8 +1,28 @@
 #main {
     background: #ffffff;
-    height: 100vh;
+    height: 100%;
     .content {
-        padding: 20px 15px;
+        background: #ffffff;
+        padding: 20px 15px 100px 15px;
+        ul {
+            li {
+                margin: 15px 5px 10px 30px;
+                position: relative;
+                &:before {
+                    content: "\f1db";
+                    font-family: FontAwesome;
+                    color: #575757;
+                    font-size: 18px;
+                    padding-right: 8px;
+                    position: absolute;
+                    top: 0;
+                    left: -30px;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
     }
     .add {
         z-index: 1;
@@ -12,7 +32,7 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 100%;
+        width: 500px;
         form {
             display: flex;
             justify-content: space-between;
@@ -32,6 +52,7 @@
                 border: none;
                 color: #575757;
                 font-size: 35px;                
+                cursor: pointer;
             }
         }
     }
