@@ -13,7 +13,7 @@ li {
 }
 
 * {
-  font-family: 'Comfortaa', cursive, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Comfortaa", cursive, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -32,7 +32,6 @@ body {
 #header {
   background: white;
 }
-
 #header .banner {
   height: 170px;
   width: 500px;
@@ -40,11 +39,9 @@ body {
   color: white;
   position: relative;
 }
-
 #header .banner img {
   margin-top: -40px;
 }
-
 #header .banner .date {
   position: absolute;
   bottom: 15px;
@@ -57,19 +54,27 @@ body {
   background: #ffffff;
   height: 100%;
 }
-
 #main .content {
   background: #ffffff;
   padding: 20px 15px 100px 15px;
 }
-
 #main .content ul li {
+  overflow: hidden;
   margin: 15px 5px 10px 30px;
   position: relative;
 }
-
+#main .content ul li i {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 8px;
+}
+#main .content ul li i.delete-icone {
+  margin-right: 15px;
+  color: #b20000;
+}
 #main .content ul li:before {
-  font-family: FontAwesome;
+  content: "\f1db";
   color: #575757;
   font-size: 18px;
   padding-right: 8px;
@@ -77,37 +82,22 @@ body {
   top: 0;
   left: -30px;
 }
-
-#main .content ul li:hover {
-  cursor: pointer;
-}
-
 #main .add {
   z-index: 1;
   background: #ffffff;
-  -webkit-box-shadow: 0px 0px 5px 0px #575757;
-          box-shadow: 0px 0px 5px 0px #575757;
+  box-shadow: 0px 0px 5px 0px #575757;
   position: fixed;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 500px;
 }
-
 #main .add .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 10px;
 }
-
 #main .add .form #task {
   border: none;
   position: relative;
@@ -117,7 +107,6 @@ body {
   width: 90%;
   background: rgba(255, 255, 255, 0);
 }
-
 #main .add .form #btn {
   background: rgba(255, 255, 255, 0);
   border: none;
@@ -125,4 +114,5 @@ body {
   font-size: 35px;
   cursor: pointer;
 }
+
 /*# sourceMappingURL=index.css.map */

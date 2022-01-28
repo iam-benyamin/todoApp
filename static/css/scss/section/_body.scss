@@ -6,20 +6,28 @@
         padding: 20px 15px 100px 15px;
         ul {
             li {
+                overflow: hidden;
                 margin: 15px 5px 10px 30px;
                 position: relative;
+                i {
+                    float: right;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    padding: 8px;
+                    &.delete-icone {
+                        margin-right: 15px;
+                        color: #b20000;
+                    }
+                }
                 &:before {
-                    // content: "\f1db";
-                    font-family: FontAwesome;
+                    content: "\f1db";
+                    // font-family: FontAwesome;
                     color: #575757;
                     font-size: 18px;
                     padding-right: 8px;
                     position: absolute;
                     top: 0;
                     left: -30px;
-                }
-                &:hover {
-                    cursor: pointer;
                 }
             }
         }
@@ -42,7 +50,7 @@
                 border: none;
                 position: relative;
                 outline: none;
-                font-size: 18px;                
+                font-size: 18px;
                 padding: 12px;
                 width: 90%;
                 background: rgba(255, 255, 255, 0);
@@ -51,7 +59,7 @@
                 background: rgba(255, 255, 255, 0);
                 border: none;
                 color: #575757;
-                font-size: 35px;                
+                font-size: 35px;
                 cursor: pointer;
             }
         }
